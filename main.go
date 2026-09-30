@@ -12,7 +12,7 @@ func main() {
 			http.NotFound(w, r)
 			return
 		}
-		if _, err := w.Write([]byte("Hello, world!")); err != nil {
+		if _, err := w.Write([]byte("Hello, world! blablabla")); err != nil {
 			log.Printf("write response: %v", err)
 		}
 	})
